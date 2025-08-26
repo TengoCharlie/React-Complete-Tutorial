@@ -5,14 +5,14 @@
  * and renders the main page.
  */
 import { ThemeProvider } from './context/ThemeProvider.jsx'
-import WeatherPage from './pages/WeatherPage.jsx'
+import ChatPage from './pages/ChatPage.jsx'
 
 function App() {
   return (
     // Context provider supplies theme values to the component tree
     <ThemeProvider>
       {/* Pages represent full screens in atomic design */}
-      <WeatherPage />
+      <ChatPage />
     </ThemeProvider>
   )
 }
