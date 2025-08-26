@@ -4,8 +4,9 @@
  * Wraps the application with providers (like ThemeProvider)
  * and renders the main page.
  */
-import { ThemeProvider } from './context/ThemeProvider.jsx'
-import ChatPage from './pages/ChatPage.jsx'
+import { ThemeProvider } from "./context/ThemeProvider.jsx";
+import ChatPage from "./pages/ChatPage.jsx";
+import "./App.css";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       {/* Pages represent full screens in atomic design */}
       <ChatPage />
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;

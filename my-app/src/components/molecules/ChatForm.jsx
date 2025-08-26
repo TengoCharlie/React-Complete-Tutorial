@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import Input from '../atoms/Input.jsx'
-import Button from '../atoms/Button.jsx'
+import { useState } from "react";
+import Input from "../atoms/Input.jsx";
+import Button from "../atoms/Button.jsx";
 
 /**
  * Molecule: ChatForm
@@ -11,14 +11,14 @@ import Button from '../atoms/Button.jsx'
  */
 const ChatForm = ({ onSend }) => {
   // Local state for the text typed by the user
-  const [text, setText] = useState('')
+  const [text, setText] = useState("");
 
   // Handler that returns the message to the parent
   const handleSubmit = () => {
-    if (!text.trim()) return
-    onSend(text)
-    setText('') // reset local state
-  }
+    if (!text.trim()) return;
+    onSend(text);
+    setText(""); // reset local state
+  };
 
   return (
     <div>
@@ -29,7 +29,7 @@ const ChatForm = ({ onSend }) => {
       />
       <Button onClick={handleSubmit}>Send</Button>
     </div>
-  )
-}
+  );
+};
 
-export default ChatForm
+export default ChatForm;

@@ -6,11 +6,12 @@
 const Input = ({ value, onChange, placeholder }) => {
   return (
     <input
+      className="chat-input"
       value={value}
       onChange={onChange}
       placeholder={placeholder}
     />
-  )
-}
+  );
+};
 
-export default Input
+export default Input;
