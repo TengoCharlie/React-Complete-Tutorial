@@ -1,3 +1,9 @@
+import Greeting from "./components/Greeting.jsx";
+import Counter from "./components/Counter.jsx";
+import Timer from "./components/Timer.jsx";
+import TodoApp from "./components/TodoApp.jsx";
+import "./App.css";
+
 /**
  * App.jsx
  * ----------
@@ -7,15 +13,9 @@
  *  - Handling side effects with `useEffect`
  *  - A mini Todo project combining these ideas
  */
-
-import Greeting from './components/Greeting.jsx'
-import Counter from './components/Counter.jsx'
-import Timer from './components/Timer.jsx'
-import TodoApp from './components/TodoApp.jsx'
-
 function App() {
   // JavaScript can be embedded directly inside JSX using curly braces
-  const name = 'Harsh'
+  const name = "Harsh";
 
   return (
     <div>
@@ -49,7 +49,7 @@ function App() {
         <TodoApp />
       </section>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
