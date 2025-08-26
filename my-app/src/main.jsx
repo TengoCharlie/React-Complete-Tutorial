@@ -1,20 +1,22 @@
 /**
  * Entry point for the React application.
- * React keeps a lightweight representation of the DOM in memory (the virtual DOM).
- * When components update, React compares this virtual DOM with the real DOM and
- * efficiently updates only what changed.
+ * Demonstrates Context and React Router setup.
  */
-
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
+import { CartProvider } from './context/CartContext'
 
-// Attach the component tree to the real DOM element with id 'root'
 createRoot(document.getElementById('root')).render(
-  // StrictMode helps highlight potential problems in an application
   <StrictMode>
-    {/* App is the root LEGO block of our interface */}
-    <App />
+    {/* BrowserRouter enables client-side routing */}
+    <BrowserRouter>
+      {/* CartProvider exposes global cart state */}
+      <CartProvider>
+        <App />
+      </CartProvider>
+    </BrowserRouter>
   </StrictMode>,
 )
